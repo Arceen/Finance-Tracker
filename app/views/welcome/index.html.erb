@@ -1,1 +1,5 @@
-<h1>Welcome to the index</h1>
+<h1>Welcome to the Finance Tracker App</h1>
+<%=user_session%>
+<%=user_signed_in?%>
+<%=current_user.remember_created_at%>
+<%= link_to 'Sign out', destroy_user_session_path, data: {'turbo-method': :delete} %>
